@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Diwali Bomb</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <header class="head">
+      <img src="./images/Frame.svg" alt="Description of the image">
+    </header>
+    <div class="content">
+        <div class="row">
+        <img class="banner" src="./images/Frame 6.png" alt="Description of the image">
+        <div class="imgText">
+              <p><h1 style="color: white;">  The choice is yours.
+                Because they don’t have one.</h1> </p>
+            <button style="border: brown; padding: 10px 20px; color: red;">QUICK VIEW</button>
+
+        </div>
+    </div>
+        <div>
+            <div>
+                <div><img src="./images/linebar.png" alt="Description of the image">
+                    <h1>About</h1><img src="./images/linebar.png" alt="Description of the image">
+                </div>
+
+                <div class="about">
+                    <img src="./images/Frame.png" alt="Description of the image">
+                    <p>
+                        Our products are crafted exclusively from the dreams and screams of young kids who wanted to
+                        show their mastery in their chosen fields but were directed towards a factory for daily wages.
+                        Each cracker bursts brighter than their lost smiles and can be heard louder than their cries for
+                        miles. Buy them, burst them, brag about them.
+                    </p>
+                    <img src="./images/Frame.png" alt="Description of the image">
+                </div>
+            </div>
+            <div>
+                <div><img src="./images/linebar.png" alt="Description of the image">
+                    <h1>Products</h1><img src="./images/linebar.png" alt="Description of the image">
+                </div>
+                <div class="products">
+                    <div>
+                        <img src="./images/Frame 7.png" alt="Description of the image">
+                        <div class="container">
+                            <b>Raju ka rassibumb</b>
+                            <button onclick="openmodal()" style="border: brown; padding: 10px 20px; color: white;background-color: red;">QUICK VIEW</button>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./images/Frame 7.png" alt="Description of the image">
+                        <div class="container">
+                            <b>Ladiyon ki Rani Chani</b>
+                            <button onclick="openmodal()" class="myBtn" style="border: brown; padding: 10px 20px; color: white;background-color: red;">QUICK VIEW</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <h1>Follow us on</h1>
+        <div class="iconsuse">
+            <img src="./images/001-instagram.png" alt="Description of the image">
+            <img src="./images/002-youtube.png" alt="Description of the image">
+            <img src="./images/003-twitter.png" alt="Description of the image">
+            <img src="./images/004-facebook.png" alt="Description of the image">
+            <img src="./images/005-linkedin.png" alt="Description of the image">
+        </div>
+    </div>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="product-item">
+                <img class="img_deg" src="./images/Frame 16.png" alt="Description of the image">
+                <div class="product-details">
+                    <h5 class="close"></h5>
+                    <h1>Raju ka rassibumb</h1>
+                    <p>The choice is yours. Because they don't have one.</p>
+                    <h6>Product Description:</h6>
+                    <p>This product packs an extra punch, thanks to the literal blood, sweat and tears of a young boy.</p>
+                    <h6>Product Contents:</h6>
+                    <p>10 hand-hurting pieces of rassi bombs filled with great pain, Raju’s hopes.</p>
+                    <h6>Shipping Time:</h6>
+                    <p>Before Raju understands that his dreams do not matter.</p>
+                    <button style="background-color: red; color: white; background-color: red;">Choose now</button>
+                </div>
+            </div>
+            
+
+
+
+        </div>
+
+    </div>
+</body>
+<script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+    
+    // Get the button that opens the modal
+    var btn = document.getElementsByClassName("myBtn");
+    console.log(btn);
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks the button, open the modal 
+    // btn.onclick = function () {
+    //     modal.style.display = "block";
+    // }
+    function openmodal(){
+        modal.style.display = "block";
+    }
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+        modal.style.display = "none";
+    }
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+
+</html>
